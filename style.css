@@ -1,0 +1,56 @@
+#active {
+  color:red;
+}
+a {
+  color:black;
+  text-decoration:none;
+}
+h1 {
+  font-size:100px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+h2{
+  font-size:50px;
+}
+ol {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:30px;
+}
+body{
+  margin:0;
+}
+nav ul{
+  border-bottom:1px solid gray;
+  margin:0;
+  text-align:right;
+  } /*  상단 여백 10px  */
+nav ul li {
+	display:inline; /*  세로나열을 가로나열로 변경 */
+	border-left:1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+	font:bold 12px Dotum; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+	padding:0 10px; /* 각 메뉴 간격 */
+}
+nav ul li:first-child{border-left:none;} 
+#gird ol{
+  padding-left:33px;
+}
+#grid {
+  display:grid;
+  grid-template-columns:150px 1fr;
+}
+#grid #article{
+padding-left:25px;
+}
+@media(max-width:800px){
+#grid {
+    display:block;}
+ol {
+      border-right:none;}
+h1 {
+  border-bottom:none;}
+}
